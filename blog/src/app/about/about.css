@@ -1,0 +1,16 @@
+.login-menu {
+    display: flex;
+  }   
+  .login-menu li {
+      margin: 20px;
+      list-style-type: none;
+  }
+  .login-menu li a {
+      text-decoration: none;
+  }
+  
+  .heading {
+      color: lightgreen;
+      text-align: center;
+      margin-top: 50px;
+  }

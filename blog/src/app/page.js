@@ -42,12 +42,10 @@ export default function Home() {
     router.push(name);
   }
   return(
-    <main className={styles.main}>
+    <main style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', margin: '20px', gap: '10px' }}>
       <h1>Basic Routing | Make New Page</h1> 
       <Link href={"/login"}>Go to login</Link>
       <Link href={"/about"}>Go to about</Link>
-      <br />
-      <br />
       <button onClick={() => {navigate("/login")}}>Go to Login Page</button>
       <button onClick={() => {navigate("/about")}}>Go to About Page</button>
     </main>
