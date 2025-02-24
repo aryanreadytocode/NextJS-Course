@@ -3,8 +3,7 @@ import Link from "next/link";
 export default function Home() {
     return(
       <main>
-        <h1>Fetch Data with API in server component</h1>
-        <Link href={"/productlist"}>Go to product page</Link>
+        <h1>Style and CSS with Next Js</h1>
       </main>
     )
 }
