@@ -1,20 +1,16 @@
-import Image from "next/image"
-import Profile from '../../public/next.svg'
+import { Roboto } from "next/font/google"
 
+const roboto = Roboto({
+  weight:'100',
+  subsets:['latin'],
+  display:'swap'
+})
 export default function Home() {
-  console.log(Profile)
     return(
       <main>
-        <h1>Image optimization in Next</h1>
-        {/* <Image src={Profile} alt="Image"/> */}
-        {/* <img src={Profile.src}/> */}
-
-        <Image 
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png"
-        alt="Image"
-        width={1800}
-        height={1800}/>
-
+        <h1>Font optimization in Next</h1>
+        {/* <h1 style={{fontFamily:'Roboto', fontWeight:100}}>Font with link Tag in Next</h1> */}
+      <h1 className={roboto.className}>Font with next js font feature</h1>
       </main>
     )
 }
