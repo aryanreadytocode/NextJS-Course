@@ -1,8 +1,8 @@
-
+"use client"
 export default function Home() {
     return(
       <main>
-        <h1>Static Assets in Next</h1>
+        <h1>SSG in Next</h1>
       </main>
     )
 }
