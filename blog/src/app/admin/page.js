@@ -1,7 +1,7 @@
 export default async function Page() {
   return (
     <div>
-      <h1>User Page</h1>
+      <h1>Admin Page</h1>
     </div>
   );
 }
