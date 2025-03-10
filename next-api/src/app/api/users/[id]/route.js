@@ -8,3 +8,13 @@ export async function GET(req, content) {
         {status:200}
     )
 }
+
+export async function PUT(request, content) {
+    let payload = await request.json();
+    payload.id = content.params.id;
+    if(!payload.id || !payload.name || !payload.email || !payload.age) {
+        return NextResponse.json({result: "Request data is not valid", success: false}, {status: 400})
+    }
+    return NextResponse.json({result: payload, success: true}, {status: 200})
+
+}
